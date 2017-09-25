@@ -1,5 +1,8 @@
+dbpath = Rails.root.join("#{Rails.env}.sqlite3")
+dburl = "sqlite:#{dbpath}"
+
 ROM::Rails::Railtie.configure do |config|
   config.gateways[:default] = [
-    :sql, ENV.fetch('DATABASE_URL'), not_inferrable_relations: [:schema_migrations]
+    :sql, dburl, not_inferrable_relations: [:schema_migrations]
   ]
 end

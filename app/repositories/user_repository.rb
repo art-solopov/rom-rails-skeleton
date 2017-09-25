@@ -1,6 +1,4 @@
-class UserRepository < ROM::Repository::Base
-  relations :users
-
+class UserRepository < ROM::Repository[:users]
   def [](id)
     users.by_id(id).one!
   end
