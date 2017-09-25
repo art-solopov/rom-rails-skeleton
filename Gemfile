@@ -7,11 +7,10 @@ end
 
 gem 'sqlite3'
 
-gem 'rom', '~> 0.9.0'
-gem 'rom-sql', '~> 0.6.0'
-gem 'rom-rails', '~> 0.5.0'
-gem 'rom-model', '~> 0.1.1'
-gem 'rom-repository', '~> 0.1.0'
+gem 'rom', '~> 4.0.0rc1'
+gem 'rom-sql', '~> 2.0.0rc1'
+gem 'rom-rails', '~> 1.0.0rc1'
+gem 'rom-repository', '~> 2.0.0rc1'
 
 gem 'dry-container'
 gem 'dry-auto_inject'
